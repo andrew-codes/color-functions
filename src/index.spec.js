@@ -3,8 +3,11 @@ import {expect} from 'chai';
 import {
     clamp,
     toHex,
+    toHexString,
     toHsla,
-    toRgba
+    toHslaString,
+    toRgba,
+    toRgbaString
 } from './';
 
 suite('color-functions index', () => {
@@ -19,5 +22,14 @@ suite('color-functions index', () => {
     });
     test('toHex function is exported', () => {
         expect(toHex).to.be.a('function');
+    });
+    test('toHslaString function is exported', () => {
+        expect(toHslaString).to.be.a('function');
+    });
+    test('toRgbaString function is exported', () => {
+        expect(toRgbaString).to.be.a('function');
+    });
+    test('toHexString function is exported', () => {
+        expect(toHexString).to.be.a('function');
     });
 });

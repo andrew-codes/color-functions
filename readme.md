@@ -9,5 +9,8 @@ npm install @andrew-codes/color-functions
 ## Exposed Functions
 - clamp : numeric
 - toHex : string
-- toHsl : hsla color object
-- toRgb : rbga color object
+- toHexString: string
+- toHsla : hsla color object
+- toHslaString: string
+- toRgba : rbga color object
+- toRgbaString: string
