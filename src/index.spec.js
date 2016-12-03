@@ -2,6 +2,7 @@ import {expect} from 'chai';
 
 import {
     clamp,
+    mix,
     toHex,
     toHexString,
     toHsla,
@@ -31,5 +32,8 @@ suite('color-functions index', () => {
     });
     test('toHexString function is exported', () => {
         expect(toHexString).to.be.a('function');
+    });
+    test('mix function is exported', () => {
+        expect(mix).to.be.a('function');
     });
 });

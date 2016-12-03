@@ -16,11 +16,11 @@ const getNonAlphaDigits = colorString => colorString
     .map(value => parseInt(value, 10));
 
 const getAlpha = (colorString) => {
-    const alphaString = colorString.match(/([01]?\.\d*)/);
+    const alphaString = colorString.match(/0(\.\d*)?\)/);
     if (!alphaString) {
         return 1;
     }
-    return parseFloat(alphaString);
+    return parseFloat(alphaString[0]);
 };
 
 export const convertShortHexToLongHex = (color) => {
