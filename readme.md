@@ -10,6 +10,12 @@ npm install @andrew-codes/color-functions
 
 ## Exposed Functions
 - clamp : numeric
+- desaturate
+- saturate
+- lighten
+- darken
+- tint
+- shade
 - toHex : string
 - toHexString: string
 - toHsla : hsla color object
