@@ -3,8 +3,10 @@ import {expect} from 'chai';
 import {
     clamp,
     darken,
+    desaturate,
     lighten,
     mix,
+    saturate,
     shade,
     tint,
     toHex,
@@ -51,5 +53,11 @@ suite('color-functions index', () => {
     });
     test('darken function is exported', () => {
         expect(darken).to.be.a('function');
+    });
+    test('saturate function is exported', () => {
+        expect(saturate).to.be.a('function');
+    });
+    test('desaturate function is exported', () => {
+        expect(desaturate).to.be.a('function');
     });
 });
