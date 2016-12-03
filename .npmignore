@@ -1,0 +1,5 @@
+/src
+.editorconfig
+.eslintrc.js
+.travis.yml
+wallaby.js
