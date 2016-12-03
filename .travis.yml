@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - '4'
+script:
+  - npm run lint
+  - npm test
+before_deploy:
+  - NODE_ENV=production
+  - npm run build
+deploy:
+  provider: npm
+  email: andrew@andrew.codes
+  api_key:
+    secure: cchPXQS2qOSFv2+ITIwrzB4YI9+gwhM2Ig0Z2vupiPnxwLCsEQ9c/GwYYVGWhhH60i/6qKKM7YjRXsy9HOuSGl4TRFrsmyaO6ii3raK/gVXKTMceRLFWxeN9/7Zq2SUh71C1Km4LID2cUw7ZMLaDzmpkoITSQYEohMbteCYNqLrFvJlN/lGm8OdQcBvMLTTDILjlC9O3Q3mQH2xOaOy2EzKVdA+CGPa6wJg/nzRj1Fc/AKQCFDNeYw9zrk5zrXME5eqkYR60VOy8fgHpMMm1BPeAwoSal6snUl7RUV2jYV8EvKsMP4D2MaYxE1DU4CHqMGFmIGa+AJtrbKIEKLEwWrtG+IDO8IsvGwFJ2yR6Q9jLqGLNqiu59bL+B7xYylAH5f4mPIH0ID2nBOS3CAzjPt6hDBeXWawUC6/pn8Ou2Ckzoy0XQmjPawyVwIZoBuh8YK1C2jtN5c9i1Ylzv1qEYpxnt12qsBntEMxJi8bTb3Y1IZUdkbLJkzlbYrmPTgqldNqPzkLFj80+q7Us/pbnyAhIkn/j7d8PrQCvUSm/wkSH+ZI57/CUhARhsbfmffhRlcSpCRgV3F0Qu9i9iVBlW6id37iWhaOXsW4j7PlJWLr5ASCiDQQGh0+ZxzmiBBXzXjPoJS502LAEPisRZUkDI7uZf/F5Pqe67L+wYNhvQAs=
+  on:
+    tags: true
+    repo: andrew-codes/color-functions
