@@ -3,6 +3,8 @@ import {expect} from 'chai';
 import {
     clamp,
     mix,
+    shade,
+    tint,
     toHex,
     toHexString,
     toHsla,
@@ -35,5 +37,11 @@ suite('color-functions index', () => {
     });
     test('mix function is exported', () => {
         expect(mix).to.be.a('function');
+    });
+    test('shade function is exported', () => {
+        expect(shade).to.be.a('function');
+    });
+    test('tint function is exported', () => {
+        expect(tint).to.be.a('function');
     });
 });
