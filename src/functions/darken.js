@@ -5,4 +5,4 @@ export default (color, amount) => {
     const hsla = toHsla(color);
     hsla.luminance -= amount;
     return toRgba(hsla);
-}
+};

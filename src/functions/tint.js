@@ -1,5 +1,3 @@
 import mix from './mix';
 
-export default (color, amount) => {
-    return mix(color, '#fff', amount);
-};
+export default (color, amount) => mix(color, '#fff', amount);

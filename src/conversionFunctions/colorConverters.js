@@ -164,7 +164,7 @@ export const convertHslaToRgba = (color) => {
         alpha: color.alpha,
         b: hueToRgb(p, q, hueAsPercentage - (1.0 / 3.0)),
         g: hueToRgb(p, q, hueAsPercentage),
-        r: hueToRgb(p, q, hueAsPercentage + (1.0/3.0)),
+        r: hueToRgb(p, q, hueAsPercentage + (1.0 / 3.0)),
         type: 'rgba'
     };
 };

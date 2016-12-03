@@ -5,7 +5,7 @@ export default (color1, color2, amount) => {
     const rgba1 = toRgba(color1);
     const rgba2 = toRgba(color2);
     const a = rgba1.alpha - rgba2.alpha;
-    const w1 = (((w * a == -1)
+    const w1 = (((w * a === -1)
             ? w
             : (w + a) / (1 + w * a)) + 1) / 2.0;
     const w2 = 1 - w1;
