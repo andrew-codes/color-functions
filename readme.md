@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/andrew-codes/color-functions.svg?branch=master)](https://travis-ci.org/andrew-codes/color-functions)
+
 # @andrew-codes/color-functions
 A variety of color manipulation functions written in JavaScript.
 
