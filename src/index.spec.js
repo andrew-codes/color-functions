@@ -2,6 +2,8 @@ import {expect} from 'chai';
 
 import {
     clamp,
+    darken,
+    lighten,
     mix,
     shade,
     tint,
@@ -43,5 +45,11 @@ suite('color-functions index', () => {
     });
     test('tint function is exported', () => {
         expect(tint).to.be.a('function');
+    });
+    test('lighten function is exported', () => {
+        expect(lighten).to.be.a('function');
+    });
+    test('darken function is exported', () => {
+        expect(darken).to.be.a('function');
     });
 });

@@ -1,4 +1,6 @@
 export {default as clamp} from './utilities/clamp';
+export {default as darken} from './functions/darken';
+export {default as lighten} from './functions/lighten';
 export {default as mix} from './functions/mix';
 export {default as shade} from './functions/shade';
 export {default as tint} from './functions/tint';
