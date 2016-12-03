@@ -1,6 +1,6 @@
 {
   "name": "@andrew-codes/color-functions",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Collection of functions to manipulate colors in JavaScript",
   "main": "dist/index.js",
   "scripts": {
