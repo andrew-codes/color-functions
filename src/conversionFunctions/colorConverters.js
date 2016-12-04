@@ -149,9 +149,9 @@ export const convertHslaToRgba = (color) => {
     if (color.saturation === 0) {
         return {
             alpha: color.alpha,
-            b: 255,
-            g: 255,
-            r: 255,
+            b: clamp(Math.round(color.luminance * 255, 0, 255)),
+            g: clamp(Math.round(color.luminance * 255, 0, 255)),
+            r: clamp(Math.round(color.luminance * 255, 0, 255)),
             type: 'rgba'
         };
     }
