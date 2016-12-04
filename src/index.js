@@ -6,6 +6,7 @@ export {default as getLuminance} from './functions/getLuminance';
 export {default as lighten} from './functions/lighten';
 export {default as mix} from './functions/mix';
 export {default as saturate} from './functions/saturate';
+export {default as setOpacity} from './functions/setOpacity';
 export {default as shade} from './functions/shade';
 export {default as tint} from './functions/tint';
 export {default as toHex} from './conversionFunctions/toHsla';

@@ -9,6 +9,7 @@ import {
     lighten,
     mix,
     saturate,
+    setOpacity,
     shade,
     tint,
     toHex,
@@ -67,5 +68,8 @@ suite('color-functions index', () => {
     });
     test('getLuminance function is exported', () => {
         expect(getLuminance).to.be.a('function');
+    });
+    test('setOpacity function is exported', () => {
+        expect(setOpacity).to.be.a('function');
     });
 });
