@@ -1,6 +1,8 @@
 export {default as clamp} from './utilities/clamp';
 export {default as darken} from './functions/darken';
 export {default as desaturate} from './functions/desaturate';
+export {default as getContrastRatio} from './functions/getContrastRatio';
+export {default as getLuminance} from './functions/getLuminance';
 export {default as lighten} from './functions/lighten';
 export {default as mix} from './functions/mix';
 export {default as saturate} from './functions/saturate';

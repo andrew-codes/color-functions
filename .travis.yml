@@ -1,6 +1,9 @@
 language: node_js
 node_js:
   - '4'
+branches:
+  only:
+    - master
 before_install: if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 script:
   - npm run lint

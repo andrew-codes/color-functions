@@ -4,6 +4,8 @@ import {
     clamp,
     darken,
     desaturate,
+    getContrastRatio,
+    getLuminance,
     lighten,
     mix,
     saturate,
@@ -59,5 +61,11 @@ suite('color-functions index', () => {
     });
     test('desaturate function is exported', () => {
         expect(desaturate).to.be.a('function');
+    });
+    test('getContrastRatio function is exported', () => {
+        expect(getContrastRatio).to.be.a('function');
+    });
+    test('getLuminance function is exported', () => {
+        expect(getLuminance).to.be.a('function');
     });
 });
