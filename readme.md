@@ -16,6 +16,8 @@ npm install @andrew-codes/color-functions
 - darken
 - tint
 - shade
+- getContrastRatio
+- getLuminance
 - toHex : string
 - toHexString: string
 - toHsla : hsla color object
