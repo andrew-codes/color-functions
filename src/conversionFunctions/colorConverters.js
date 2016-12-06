@@ -8,15 +8,21 @@ import {
     isShortHex
 } from './colorValidityChecks';
 
+const nonAlphaDigitsExpression = /\d+/g;
 const roundHslValue = value => (Math.round(value * 100) / 100);
 
 const getNonAlphaDigits = colorString => colorString
-    .match(/\d+/g)
+    .match(nonAlphaDigitsExpression)
     .slice(0, 3)
     .map(value => parseInt(value, 10));
 
 const getAlpha = (colorString) => {
-    const alphaString = colorString.match(/0(\.\d*)?\)/);
+    const hasAlpha = colorString.match(/a/);
+    if (!hasAlpha) {
+        return 1;
+    }
+    const alphaString = colorString
+        .match(/0(\.\d*)?\)/);
     if (!alphaString) {
         return 1;
     }

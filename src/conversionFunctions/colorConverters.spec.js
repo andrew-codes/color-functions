@@ -69,8 +69,11 @@ suite('convertRgbStringToRgba', () => {
         expect(hsla).to.deep.equal(getBlueHsla());
     });
     test('a rgb string can be converted to a rgba color', () => {
-        const actual = convertRgbStringToRgba('rgb(255,255, 255)');
-        expect(actual).to.deep.equal(getWhiteRgba());
+        const whiteRgbaActual = convertRgbStringToRgba('rgb(255,255, 255)');
+        expect(whiteRgbaActual).to.deep.equal(getWhiteRgba());
+
+        const blackRgbaActual = convertRgbStringToRgba('rgb(0,0, 0)');
+        expect(blackRgbaActual).to.deep.equal(getBlackRgba());
     });
     test('a rgba string can be converted to a rgba color', () => {
         const actual = convertRgbStringToRgba('rgba(255,255, 255,0.5)');
@@ -196,6 +199,15 @@ function getWhiteRgba(alpha = 1) {
         b: 255,
         g: 255,
         r: 255,
+        type: 'rgba'
+    }
+}
+function getBlackRgba(alpha = 1) {
+    return {
+        alpha,
+        b: 0,
+        g: 0,
+        r: 0,
         type: 'rgba'
     }
 }

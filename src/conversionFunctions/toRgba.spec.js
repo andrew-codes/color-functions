@@ -25,8 +25,11 @@ suite('toRgba', () => {
     });
 
     test('a rgb/rbga string can be converted into an rgba color', () => {
-        const rgbActual = toRgba('rgb(255,255, 255)');
-        expect(rgbActual).to.deep.equal(getWhiteRgba());
+        const whiteRgbaActual = toRgba('rgb(255,255, 255)');
+        expect(whiteRgbaActual).to.deep.equal(getWhiteRgba());
+
+        const blackRgbaActual = toRgba('rgb(0,0, 0)');
+        expect(blackRgbaActual).to.deep.equal(getBlackRgba());
 
         const rgbaActual = toRgba('rgba(255, 255,255, 0.5)');
         expect(rgbaActual).to.deep.equal(getWhiteRgba(0.5));
@@ -57,6 +60,16 @@ function getWhiteRgba(alpha = 1) {
         b: 255,
         g: 255,
         r: 255,
+        type: 'rgba'
+    }
+}
+
+function getBlackRgba(alpha = 1) {
+    return {
+        alpha,
+        b: 0,
+        g: 0,
+        r: 0,
         type: 'rgba'
     }
 }
