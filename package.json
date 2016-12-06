@@ -44,5 +44,14 @@
         "minified": true
       }
     }
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-codes/color-functions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrew-codes/color-functions/issues"
+  },
+  "homepage": "https://github.com/andrew-codes/color-functions#readme"
 }
