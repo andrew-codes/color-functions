@@ -6,6 +6,7 @@ import {
     desaturate,
     getContrastRatio,
     getLuminance,
+    invert,
     lighten,
     mix,
     saturate,
@@ -50,6 +51,9 @@ suite('color-functions index', () => {
     });
     test('tint function is exported', () => {
         expect(tint).to.be.a('function');
+    });
+    test('invert function is exported', () => {
+        expect(invert).to.be.a('function');
     });
     test('lighten function is exported', () => {
         expect(lighten).to.be.a('function');
